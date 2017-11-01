@@ -89,7 +89,7 @@ public class eCommerce {
 			}
 			else{
 				
-					if(product_name.equals(list.substring(0, product_name.length())));
+					if(product_name.equals(list.substring(0, product_name.length())))
 					   count++;
 				
 				//break;
