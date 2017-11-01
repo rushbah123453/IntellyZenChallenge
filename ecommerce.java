@@ -73,28 +73,44 @@ public class eCommerce {
 
 	public  void findoperation(String product_name) {
 		
-	//	System.out.println("in find");
+		//System.out.println(product_name.length());
 		int count=0;
-		
+		//System.out.println(list.substring(0, product_name.length()));
 		for(String list: cart)
+			
 		{
+		//	System.out.println(list.length()+list);
+		//	System.out.println("in for");
+		
+			if(list.length()<product_name.length())
+			{
+				//System.out.println("count2++");
+				break;
+			}
 			if(list.contains(product_name))
 			{
 				count++;
 				//break;
+				//System.out.println("count1++");
 			}
-			else if(list.length()<product_name.length())
+			else if(product_name.equals(list.substring(0, product_name.length())))
 			{
-				//break;
-			}
-			else{
-				
-					if(product_name.equals(list.substring(0, product_name.length())))
+			//	System.out.println("count3++");
 					   count++;
 				
 				//break;
 			}
+			
+			
 		}
+/*	if(	cart.contains(product_name))
+		{
+		count++;
+		}
+	if(product_name.equals(list.substring(0, product_name.length())))
+	{
+		
+	}*/
 		System.out.println(count);
 		
 	}
