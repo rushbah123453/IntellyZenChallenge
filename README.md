@@ -33,3 +33,18 @@ English letters only.
 Output Format
 For each find partial operation, print the number of product names starting with partial on a
 new line
+
+
+Sample Input
+enter range of inputs
+4
+add rushabh
+add rusaws
+find rus
+list
+
+Sample output
+2
+rushabh
+russhil
+
